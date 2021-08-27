@@ -1,0 +1,80 @@
+body {
+    font-family: 'Tinos', sans-serif;
+}
+
+header{
+    background: #EFB7B7;
+    height: 50px;
+    padding: 20px 0;
+}
+
+nav {
+    position: absolute;
+    right: 70px;
+    top: 30px;
+    margin: 0 auto;
+}
+
+nav li {
+    display: inline;
+    margin: 10px 15px 0 15px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+    letter-spacing: 2.5px;
+}
+
+nav a:hover {
+    color: #BD4B4B;
+    transition: 0.4s;
+}
+
+.fundo-sobre {
+    background: #EEEEEE;
+    height: 650px;
+    padding: 20px 0;
+}
+
+.titulo-sobre {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    margin: 0.5em 0 1.5em;
+    color: #EFB7B7;
+    letter-spacing: 2.5px;
+    clear: left;
+}
+
+.sobre p:first-child {
+    text-align: left;
+    margin: -20px 50px 1em;   
+}
+
+.foto-perfil-1 {
+    display: block;
+    width: 10%;
+    margin: 20px 200px;
+    border-radius: 500px;
+    opacity: 0.8;
+    transition: 400ms;
+    float: left;
+}
+
+.foto-perfil-2 {
+    display: block;
+    width: 10%;
+    margin: 200px 1500px;
+    border-radius: 500px;
+    opacity: 0.8;
+    transition: 400ms;
+}
+
+.foto-perfil-1:hover, .foto-perfil-2:hover {
+    opacity: 1;
+}
