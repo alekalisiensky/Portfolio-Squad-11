@@ -3,9 +3,14 @@ body {
 }
 
 header{
-    background: #EFB7B7;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background: rgb(239, 176, 188);
     height: 50px;
     padding: 20px 0;
+    z-index: 99;
 }
 
 nav ul {
@@ -50,10 +55,16 @@ nav .link:hover {
 }
 
 .fundo-squad{
-    background-color: #c05f5f;
+    background-color: #ca6e6e;
     width: 100%;
     height: 500px;
     padding: 100px 0px;
+}
+
+#icone{
+    display: block;
+    width: 32%;
+    margin: 20px auto 0px;
 }
 
 .informacoes p{
@@ -64,14 +75,6 @@ nav .link:hover {
     font-size: 30px;
     color: white;
     margin: 0px auto 20px;
-}
-
-#icone{
-    display: block;
-    width: 25%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 40px;
 }
 
 .fundo-portfolio{
@@ -85,7 +88,7 @@ h1, h3{
 }
 
 .fundo-sobre {
-    background: #c0c0c0;
+    background: rgb(180, 195, 222);
     height: 500px;
     padding: 20px 0;
     width: 100%;
@@ -95,7 +98,7 @@ h2{
     color: white;
 }
 
-#sobre p{
+#sobre div{
     height: 134px;
     padding: 20px 30px;
     margin-left: auto;
@@ -103,18 +106,26 @@ h2{
     width: 50%;
     color: white;
 }
-#sobre-ale{
+
+.nome-sobre{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 22px;
+    margin-bottom: 0.5em;
+}
+
+.sobre-ale{
     text-align: left;
 }
 
-#sobre-duda{
+.sobre-duda{
     text-align: right;
 }
 
 .foto-perfil-1 {
     display: block;
     width: 10%;
-    margin: 20px 70px 20px 200px;
+    margin: 20px 30px 20px 200px;
     border-radius: 500px;
     opacity: 0.8;
     transition: 400ms;
@@ -124,7 +135,7 @@ h2{
 .foto-perfil-2 {
     display: block;
     width: 10%;
-    margin: 20px 200px 20px 70px;
+    margin: 20px 200px 20px 30px;
     border-radius: 500px;
     opacity: 0.8;
     transition: 400ms;
@@ -139,4 +150,17 @@ h2{
     background-color: white;
     width: 100%;
     height: 500px;
+}
+
+footer{
+    background-color: rgb(150, 156, 230);
+    height: 100px;
+    width: 100%;
+}
+.copyright{
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    padding: 40px;
+    font-weight: bold;
 }

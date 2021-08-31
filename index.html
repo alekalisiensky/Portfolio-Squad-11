@@ -9,18 +9,18 @@
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="shortcut icon" href="imagens-site/favicon1.ico">
         <link href="https://fonts.googleapis.com/css2?family=Tinos&display=swap" rel="stylesheet">
 
     </head>
     <body>
-        <!-- fazer a header acompanhar a rolagem da pagina com js-->
         <header>
             <div class="fundo-navegação">
                 <nav> 
                     <a class="squad-11" href="#topo-pagina">Squad 11</a>
                     <ul>
-                        <li> <a class="link" href="#sobre"> Sobre </a></li>
                         <li> <a class="link" href="#portfolio"> Portfolio</a></li>
+                        <li> <a class="link" href="#sobre"> Sobre </a></li>
                         <li> <a class="link" href="#contato"> Contato</a></li>
                     </ul>
                 </nav>
@@ -31,10 +31,8 @@
         <div class="fundo-squad">
             <section id="topo-pagina">
                 <div class="icone da pagina">
-                    <!-- fazer um ícone melhor pra representar o squad -->
-                    <img id="icone" src="circulo.png"> <!-- imagem teste -->
+                    <img id="icone" src="imagens-site/onze.png"> <!-- imagem teste -->
                 </div>
-
                 <div class="informacoes">
                     <p>#TeuFuturo | IMED</p>
                 </div>
@@ -52,9 +50,15 @@
                 <section id="sobre">
                     <h2 class="titulo">Sobre</h2>
                     <img class="foto-perfil-1" src="imagem-perfil/ale.jpg">
-                    <p id="sobre-ale"> "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum perferendis aspernatur deserunt natus molestiae, eum fugiat provident laboriosam! Consequuntur a quaerat vero architecto unde officiis impedit nesciunt neque, maxime maiores.</p>
+                    <div class="sobre-ale">
+                        <p class="nome-sobre">Alessandra Kalisiensky</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus ante metus, ac pretium ipsum lobortis sit amet. Maecenas mollis consectetur aliquam. In sed molestie erat, eleifend rhoncus purus. Maecenas arcu nisi, cursus sed varius a, condimentum sit amet risus.</p>
+                    </div>
                     <img class="foto-perfil-2" src="imagem-perfil/duda.jpg">
-                    <p id="sobre-duda"> "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum perferendis aspernatur deserunt natus molestiae, eum fugiat provident laboriosam! Consequuntur a quaerat vero architecto unde officiis impedit nesciunt neque, maxime maiores.</p>
+                    <div class="sobre-duda">
+                        <p class="nome-sobre">Eduarda Bernardi</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus ante metus, ac pretium ipsum lobortis sit amet. Maecenas mollis consectetur aliquam. In sed molestie erat, eleifend rhoncus purus. Maecenas arcu nisi, cursus sed varius a, condimentum sit amet risus.</p>
+                    </div>
                 </section>
             </div>
         </main>
@@ -66,12 +70,12 @@
             </section>
         </div>
 
-        <!-- para adicionar mais tarde
+        
         <footer>
-            <p class="copyright"> &copy; Copyright ? - 2021 </p>
+                <p class="copyright"> Copyright &copy; ? - 2021 </p>
         </footer>
-        -->
-
-        <script src="script.js"></script>
+        
+        <script src="js/jquery-3.6.0.js"></script>
+        <script src="js/script.js"></script>
     </body>
 </html>
