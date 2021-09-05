@@ -59,11 +59,12 @@ nav .link:hover {
     text-align: center;
     font-weight: bold;
     font-size: 40px;
-    margin: 0.5em 0 1.5em;
+    margin: 0.5em 0 1em;
     letter-spacing: 2.5px;
     clear: left;
 }
 
+/**seção squad**/
 .fundo-squad{
     background-color: #ca6e6e;
     width: 100%;
@@ -89,13 +90,36 @@ nav .link:hover {
 .fundo-portfolio{
     background-color: white;
     width: 100%;
-    height: 500px;
+    height: auto;
 }
 
 h1, h3{
     color: #EFB7B7;
 }
 
+/**portfolio**/
+#portfolio{
+    margin: auto 15vw;
+}
+
+#portfolio p{
+    text-align: center;
+    font-size: 1em;
+    color: #5a5a5a;
+    margin: 10px 0px;
+}
+
+#conteudos-portfolio li{
+    margin: 30px 0px;
+}
+#conteudos-portfolio li span{
+    color: #ca6e6e;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/**sobre**/
 .fundo-sobre {
     background: rgb(180, 195, 222);
     height: 500px;
@@ -156,12 +180,14 @@ h2{
     opacity: 1;
 }
 
+/**contato**/
 .fundo-contato{
     background-color: white;
     width: 100%;
     height: 500px;
 }
 
+/**rodapé**/
 footer{
     background-color: #969ce6;
     height: 100px;
