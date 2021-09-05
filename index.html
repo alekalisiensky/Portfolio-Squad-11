@@ -18,11 +18,23 @@
             <div class="fundo-navegação">
                 <nav> 
                     <a class="squad-11" href="#topo-pagina">Squad 11</a>
-                    <ul>
-                        <li> <a class="link" href="#portfolio"> Portfolio</a></li>
-                        <li> <a class="link" href="#sobre"> Sobre </a></li>
-                        <li> <a class="link" href="#contato"> Contato</a></li>
+                    <ul class="topo-menu-invisivel">
+                        <li><button onclick="mostraMenu()" class="botao-menu" type="menu">Menu</button>
+                            <menu class="opcoes-menu">
+                                <li><a class="link" href="#portfolio"> Portfólio</a>
+                                    <!--<ul class="conteudos-menu">
+                                        <li><a href="jogos-classicos.html">Jogos Clássicos</a></li>
+                                        <li><a href="logica-programacao.html">Lógica de Programação</a></li>
+                                        <li><a href="linguagem-web.html">Programação em Linguagem Web</a></li>
+                                        <li><a href="html-css.html">HTML e CSS</a></li>
+                                    </ul>-->
+                                </li>
+                                <li> <a class="link" href="#sobre"> Sobre </a></li>
+                                <li> <a class="link" href="#contato"> Contato</a></li>
+                            </menu>
+                        </li>
                     </ul>
+                    
                 </nav>
             </div>
         </header>
@@ -52,12 +64,20 @@
                     <img class="foto-perfil-1" src="imagem-perfil/ale.jpg">
                     <div class="sobre-ale">
                         <p class="nome-sobre">Alessandra Kalisiensky</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus ante metus, ac pretium ipsum lobortis sit amet. Maecenas mollis consectetur aliquam. In sed molestie erat, eleifend rhoncus purus. Maecenas arcu nisi, cursus sed varius a, condimentum sit amet risus.</p>
+                        <ul>
+                            <li>19 anos</li>
+                            <li>Porto Alegre</li>
+                            <li>Estudante de Engenharia da Computação</li>
+                        </ul>
                     </div>
                     <img class="foto-perfil-2" src="imagem-perfil/duda.jpg">
                     <div class="sobre-duda">
                         <p class="nome-sobre">Eduarda Bernardi</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus ante metus, ac pretium ipsum lobortis sit amet. Maecenas mollis consectetur aliquam. In sed molestie erat, eleifend rhoncus purus. Maecenas arcu nisi, cursus sed varius a, condimentum sit amet risus.</p>
+                        <ul>
+                            <li>17 anos</li>
+                            <li>Carazinho</li>
+                            <li>Terceiranista</li>
+                        </ul>
                     </div>
                 </section>
             </div>

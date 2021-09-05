@@ -7,30 +7,39 @@ header{
     top: 0;
     right: 0;
     left: 0;
-    background: rgb(239, 176, 188);
+    background: #efb0bc;
     height: 50px;
     padding: 20px 0;
     z-index: 99;
 }
 
-nav ul {
+.squad-11{
+    font-size: 40px;
+    margin-left: 15vw;
+}
+
+/**oculta o botão menu**/
+.topo-menu-invisivel li button{
+    display: none;
+}
+
+/**coloca a nav ao lado direito da pagina**/
+.opcoes-menu{
     position: absolute;
     right: 70px;
     top: 30px;
     margin: 0 auto;
 }
 
-.squad-11{
-    font-size: 40px;
-    margin-left: 200px;
-}
-
+/**deixa cada link da nav lado a lado**/
 nav li {
     display: inline;
     margin: 10px 15px 0 15px;
 }
 
+/**estilo de cada item da nav**/
 nav a {
+    
     text-transform: uppercase;
     color: white;
     font-weight: bold;
@@ -44,6 +53,7 @@ nav .link:hover {
     transition: 0.4s;
 }
 
+/**estilo do titulo de cada seção**/
 .titulo {
     text-transform: uppercase;
     text-align: center;
@@ -57,7 +67,6 @@ nav .link:hover {
 .fundo-squad{
     background-color: #ca6e6e;
     width: 100%;
-    height: 500px;
     padding: 100px 0px;
 }
 
@@ -105,8 +114,10 @@ h2{
     margin-right: auto;
     width: 50%;
     color: white;
+    font-size: 1em;
 }
 
+/**estilo pros nomes do sobre**/
 .nome-sobre{
     text-transform: uppercase;
     font-weight: bold;
@@ -117,7 +128,6 @@ h2{
 .sobre-ale{
     text-align: left;
 }
-
 .sobre-duda{
     text-align: right;
 }
@@ -125,7 +135,7 @@ h2{
 .foto-perfil-1 {
     display: block;
     width: 10%;
-    margin: 20px 30px 20px 200px;
+    margin: 20px 30px 20px 15vw;
     border-radius: 500px;
     opacity: 0.8;
     transition: 400ms;
@@ -135,7 +145,7 @@ h2{
 .foto-perfil-2 {
     display: block;
     width: 10%;
-    margin: 20px 200px 20px 30px;
+    margin: 20px 15vw 20px 30px;
     border-radius: 500px;
     opacity: 0.8;
     transition: 400ms;
@@ -153,7 +163,7 @@ h2{
 }
 
 footer{
-    background-color: rgb(150, 156, 230);
+    background-color: #969ce6;
     height: 100px;
     width: 100%;
 }
@@ -163,4 +173,54 @@ footer{
     text-transform: uppercase;
     padding: 40px;
     font-weight: bold;
+}
+
+
+/**deixa o menu visivel com o resize da pagina**/
+.menu li button{
+    position: absolute;
+    right: 70px;
+    top: 15px;
+    margin: 0 auto;
+    display: block;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "tinos", sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    width: 100px;
+    background-color: #ca6e6e;
+    border-radius: 20px;
+    padding: 15px 0px;
+    border-width:  0px;
+}
+
+.botao-menu:hover, .botao-menu:focus {
+    border-color: white;
+    border-width: thin!important;
+    border-style: solid;
+}
+
+/**oculta as opcoes do menu**/
+.opcoes-invisiveis{
+    display: none;
+}
+
+/**mostra as opcoes do menu**/
+.opcoes-visiveis{
+    display: block;
+    width: 100vw;
+    height: 180px;    
+    position: relative;
+    background-color: #efb0bc;
+    border-bottom: thin solid white;
+    z-index: 1;
+}
+
+.opcoes-visiveis li{
+    display: block;
+    position: relative;
+    top: 30px;
+    text-align: center;
 }
