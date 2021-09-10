@@ -4,35 +4,34 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portfolio</title>
+        <title>Squad 11 / #TeuFuturo</title>
         <link rel="stylesheet" href="reset.css/reset.css">
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="shortcut icon" href="imagens-site/favicon1.ico">
         <link href="https://fonts.googleapis.com/css2?family=Tinos&display=swap" rel="stylesheet">
-
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
     </head>
     <body>
         <header>
+            <!-- navegação-->
             <div class="fundo-navegação">
-                <nav> 
+                <nav>
                     <a class="squad-11" href="#topo-pagina">Squad 11</a>
                     <ul class="topo-menu-invisivel">
                         <li><button onclick="mostraMenu()" class="botao-menu" type="menu">Menu</button>
-                            <menu class="opcoes-menu">
-                                <li><a class="link" id="opcao-portfolio" href="#portfolio"> Portfólio</a></li>
-                                <li> <a class="link" href="#sobre"> Sobre </a></li>
-                                <li> <a class="link" href="#contato"> Contato</a></li>
-                            </menu>
+                        <menu class="opcoes-menu">
+                        <li><a class="link" id="opcao-portfolio" href="#portfolio"> Portfólio</a></li>
+                        <li> <a class="link" href="#sobre"> Sobre </a></li>
+                        <li> <a class="link" href="#contato"> Contato</a></li>
+                        </menu>
                         </li>
                     </ul>
-                    
                 </nav>
             </div>
         </header>
-
-        
+        <!--cabeçalho-->
         <div class="fundo-squad">
             <section id="topo-pagina">
                 <div class="icone da pagina">
@@ -43,72 +42,170 @@
                 </div>
             </section>
         </div>
-
         <main>
+            <p><a href="#ex1" rel="modal:open">Open Modal</a></p>
+            <!-- seção do portfolio-->
             <div class="fundo-portfolio">
                 <section id="portfolio">
                     <h1 class="titulo">Portfólio</h1>
-                    <p>Confira os conteúdos que foram estudados e as atividades que foram realizadas pelo Squad 11 no curso do programa #TeuFuturo.</p>
+                    <h4>Confira os conteúdos que foram estudados e as atividades que foram realizadas pelo Squad 11 no curso
+                        do programa #TeuFuturo.</h4>
                     <!-- colocar os ícones pras páginas-->
                     <ul id="conteudos-portfolio">
-                        <!--fazer modificação no js pro conteudo de cada li aparecer só quando ela for clicada-->
-                            <li><span>Jogos Clássicos</span>
-                                <!--imagem exibição-->
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at quam dui. Pellentesque at urna vulputate, convallis odio sit amet, ullamcorper nulla. Pellentesque ut condimentum libero.</p>
-                            </li> 
-                            <li><span>Lógica de Programação</span>
-                                <!--imagem exibição-->
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at quam dui. Pellentesque at urna vulputate, convallis odio sit amet, ullamcorper nulla. Pellentesque ut condimentum libero.</p>
+                        <div class="primeiro-topico">
+                            <li class="titulo-topico">
+                                <a href="#modal1" rel="modal:open">
+                                    <span class="abrirModal"> Jogos Clássicos</span>
+                                    <button class="botao-mais">&plus;</button>
+                                </a>
                             </li>
-                            <li><span>Programação em Linguagem Web</span>
-                                <!--imagem exibição-->
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at quam dui. Pellentesque at urna vulputate, convallis odio sit amet, ullamcorper nulla. Pellentesque ut condimentum libero.</p>
+                            </a>
+                            <div class="paragrafo-portfolio">
+                                <p> Desenvolvemos jogos do zero em duas linguagens de programação </p>
+                                <p> Animações, controles, sons e placar.</p>
+                                <p> Primeiros passos em JavaScript, aprendendo a trabalhar com variáveis, funções e arrays</p>
+                            </div>
+                        </div>
+                        <div class="segundo-topico">
+                            <a href="#modal2" rel="modal:open">
+                                <li class="titulo-portfolio">
+                                    <span>Lógica de Programação</span>
+                                    <button class="botao-mais">&plus;</button>
+                                </li>
+                            </a>
+                            <!--imagem exibição-->
+                            <div class="paragrafo-portfolio">
+                                <p> Iniciamos programação em JavaScript para navegador </p>
+                                <p> Entendemos ainda mais sobre o uso de variáveis, laços de repetição, interação com o usuário e desenhos gráficos</p>
+                            </div>
+                        </div>
+                        <div class="terceiro-topico">
+                            <li class="titulo-topico">
+                                <span>Programação em Linguagem Web</span>
                             </li>
-                            <li><span>HTML e CSS</span>
-                                <!--imagem exibição-->
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at quam dui. Pellentesque at urna vulputate, convallis odio sit amet, ullamcorper nulla. Pellentesque ut condimentum libero.</p>
-                            </li>
+                            <!--imagem exibição-->
+                            <div class="paragrafo-portfolio">
+                                <p> Entendemos os detalhes do protocolo HTTP </p>
+                                <p> GET e POST</p>
+                                <p> Segurança Web e HTTPS</p>
+                                <p> Web Stateful e Web Stateless </p>
+                            </div>
+                        </div>
+                        <div class="quarto-topico">
+                            <a href="#modal3" rel="modal:open">
+                                <li class="titulo-topico">
+                                    <span>HTML e CSS</span>
+                                    <button class="botao-mais">&plus;</button>
+                                </li>
+                            </a>
+                            <!--imagem exibição-->
+                            <div class="paragrafo-portfolio">
+                                <p> Aprendemos sobre a estrutura de uma página HTML</p>
+                                <p> Utilizamos o navegador para inspecionar elementos, definir estilos para elementos com CSS e desenvolvemos um página Web</p>
+                                <p> Criamos formulários complexos, tabelas e campos para celulares</p>
+                                <p> Entendemos sobre Viewport e design responsivo</p>
+                                <p> Pseudo-classes e pseudo-elementos </p>
+                            </div>
+                        </div>
                     </ul>
                 </section>
             </div>
+            <!-- seção do sobre -->
             <div class="fundo-sobre">
                 <section id="sobre">
                     <h2 class="titulo">Sobre</h2>
+                    <!--seção sobre da alessandra-->
                     <img class="foto-perfil-1" src="imagem-perfil/ale.jpg">
                     <div class="sobre-ale">
-                        <p class="nome-sobre">Alessandra Kalisiensky</p>
-                        <ul>
-                            <li>19 anos</li>
-                            <li>Porto Alegre</li>
-                            <li>Estudante de Engenharia da Computação</li>
+                        <p class="nome-sobre"> Alessandra Kalisiensky</p>
+                        <ul class="descricao">
+                            <li class="descricao-ale"> 19 anos</li>
+                            <li class="descricao-ale"> Porto Alegre</li>
+                            <li class="descricao-ale"> Estudante de Engenharia de Software</li>
                         </ul>
                     </div>
+                    <!-- seção sobre da duda -->
                     <img class="foto-perfil-2" src="imagem-perfil/duda.jpg">
                     <div class="sobre-duda">
                         <p class="nome-sobre">Eduarda Bernardi</p>
-                        <ul>
-                            <li>17 anos</li>
-                            <li>Carazinho</li>
-                            <li>Terceiranista</li>
+                        <ul class="descricao">
+                            <li class="descricao-duda">17 anos </li>
+                            <li class="descricao-duda">Carazinho </li>
+                            <li class="descricao-duda">Terceiranista </li>
                         </ul>
                     </div>
                 </section>
             </div>
         </main>
-
+        <!-- seção de contato -->
         <div class="fundo-contato">
             <section id="contato">
                 <h3 class="titulo">Contato</h3>
-                
             </section>
         </div>
-
-        
+        <!--formulario de contato-->
+        <form>
+            <label for="nomesobrenome"> Nome e Sobrenome </label>
+            <input type="text" id="nomesobrenome" class="input-padrão" required>
+            <label for="email"> E-mail </label>
+            <input type="email" id="email" class="input-padrão" required placeholder="seuemail@dominio.com">
+            <label for="telefone"> Telefone </label>
+            <input type="tel" id="telefone" class="input-padrão" required placeholder="(XX) XXXXX-XXXX">
+            <label for="mensagem"> Mensagem </label>
+            <textarea id="mensagem" cols="70" rows="10" class="input-padrão" required></textarea>
+            <input type="submit" value="Enviar formulário" class="enviar">
+        </form>
+        <!-- rodapé -->
         <footer>
-                <p class="copyright"> Copyright &copy; ? - 2021 </p>
+            <!--icones-->
+            <div class="box">
+                <div class="icones">
+                    <a href="https://www.linkedin.com/in/alekalisiensky" target="blank"><img class="icone-linkedin-ale"
+                            src="imagens-rodapé/linkedin.png" alt="Logo Linkedin"></a>
+                    <a href="mailto:alessandraks20@hotmail.com" target="blank"><img class="icone-email-ale" src="imagens-rodapé/email.png"
+                            alt=""></a>
+                    <a href="http://api.whatsapp.com/send?phone=5551991541632" target="blank"><img class="icone-telefone-ale"
+                            src="imagens-rodapé/telefone.png" alt=""></a>
+                    <h4>Alessandra</h4>        
+                </div>
+                <div class="icones">
+                    <a href="https://www.linkedin.com/in/eduarda-b-8b1756211" target="blank"><img class="icone-linkedin-duda"
+                            src="imagens-rodapé/linkedin.png" alt="Logo Linkedin"></a>
+                    <a href="mailto:duda2010bernardi@gmail.com" target="blank"><img class="icone-email-duda" src="imagens-rodapé/email.png"
+                            alt=""></a>
+                    <a href="http://api.whatsapp.com/send?phone=55549930-3752" target="blank"><img class="icone-telefone-duda"
+                            src="imagens-rodapé/telefone.png" alt=""></a>
+                    <h4>Eduarda</h4>        
+                </div>
+            </div>
+            <!-- copyright -->
+            <p class="copyright"> Copyright &copy; Squad 11 - 2021 </p>
         </footer>
-        
+        <!-- modal do portfolio -->
+            <!-- primeira modal-->
+            <div id="modal1" class="modal">
+                <h2 class="titulo-modal">Freeway</h2>
+                <img src="videos/freeway.gif" alt="" width="400px" height="300px">
+                <h2 class="titulo-modal">Pong</h2>
+                <img src="videos/pong.gif" alt="" width="400px" height="300px">
+                <a href="#" rel="modal:close">Close</a>
+            </div>
+            <!-- segunda modal-->
+            <div id="modal2" class="modal">
+                <h2 class="titulo-modal">Desenhe obras de arte</h2>
+                <img src="videos/logica2_desenho.gif" alt="" width="400px" height="400px">
+                <h2 class="titulo-modal">O Alvo Aleatório</h2>
+                <img src="videos/logica2_alvo.gif" alt="" width="400px" height="400px">
+                <a href="#" rel="modal:close">Close</a>
+            </div>
+            <!-- terceiro modal modal-->
+            <div id="modal3" class="modal">
+                <h2 class="titulo-modal">Site Barbearia Alura</h2>
+                <img src="videos/barbearia.gif" alt="" width="400px" height="300px">
+                <a href="#" rel="modal:close" class="fechar">Close</a>
+            </div>
         <script src="js/jquery-3.6.0.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
         <script src="js/script.js"></script>
     </body>
 </html>

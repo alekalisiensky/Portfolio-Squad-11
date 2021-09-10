@@ -39,7 +39,7 @@ nav li {
 
 /**estilo de cada item da nav**/
 nav a {
-    
+   
     text-transform: uppercase;
     color: white;
     font-weight: bold;
@@ -59,7 +59,8 @@ nav .link:hover {
     text-align: center;
     font-weight: bold;
     font-size: 40px;
-    margin: 0.5em 0 1em;
+    margin-top: 50px;
+    margin-bottom: 1em;
     letter-spacing: 2.5px;
     clear: left;
 }
@@ -99,30 +100,72 @@ h1, h3{
 
 /**portfolio**/
 #portfolio{
-    margin: auto 15vw;
+    margin: 8vw 15vw;
+    margin-top: 0px;
 }
 
-#portfolio p{
+#portfolio h4 {
     text-align: center;
-    font-size: 1em;
     color: #5a5a5a;
-    margin: 10px 0px;
+    font-size: 1.1em;
 }
 
-#conteudos-portfolio li{
+#portfolio p {
+    font-size: 1.1em;
+    color: #5a5a5a;
+    margin: 15px 0;
+}
+
+#portfolio p:before {
+    content: "★";
+    color: #5a5a5a;
+}
+
+#conteudos-portfolio li, .titulo-portfolio {
     margin: 30px 0px;
 }
-#conteudos-portfolio li span{
+#conteudos-portfolio li span {
     color: #ca6e6e;
     text-align: center;
     font-size: 22px;
     font-weight: bold;
 }
 
+.botao-mais {
+    color: #efb0bc;
+    font-weight: bold;
+    font-size: 15px;
+    background: none;
+    border: none;
+    transition: 0.8s all;
+    cursor: pointer;
+}
+
+a {
+    color: white;
+}
+
+#modal1, #modal2, #modal3 {
+    transition: 400ms;
+    width: 100% !important;
+    
+}
+
+.titulo-modal {
+    color: #ca6e6e;
+    text-align: center !important; 
+    text-transform: uppercase !important;  
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 50px;
+    margin-bottom: 1em;
+    letter-spacing: 1.5px;
+}
+
 /**sobre**/
 .fundo-sobre {
-    background: rgb(180, 195, 222);
-    height: 500px;
+    background: #b4c3de;
+    height: 520px;
     padding: 20px 0;
     width: 100%;
 }
@@ -138,7 +181,7 @@ h2{
     margin-right: auto;
     width: 50%;
     color: white;
-    font-size: 1em;
+    font-size: 1.1em;
 }
 
 /**estilo pros nomes do sobre**/
@@ -180,30 +223,28 @@ h2{
     opacity: 1;
 }
 
-/**contato**/
-.fundo-contato{
-    background-color: white;
-    width: 100%;
-    height: 500px;
+.descricao {
+    font-size: 20px;
 }
 
-/**rodapé**/
-footer{
-    background-color: #969ce6;
-    height: 100px;
-    width: 100%;
-}
-.copyright{
-    text-align: center;
-    color: white;
-    text-transform: uppercase;
-    padding: 40px;
-    font-weight: bold;
+.descricao-ale {
+    margin: 10px;
 }
 
+.descricao-duda {
+    margin: 10px;
+}
+
+.descricao-ale:before {
+    content: "★";
+}
+
+.descricao-duda:after {
+    content: "★";
+}
 
 /**deixa o menu visivel com o resize da pagina**/
-.menu li button{
+.menu li button {
     position: absolute;
     right: 70px;
     top: 15px;
@@ -249,4 +290,112 @@ footer{
     position: relative;
     top: 30px;
     text-align: center;
+}
+
+/**contato**/
+.fundo-contato{
+    background-color: white;
+    width: 100%;
+    height: 100px;
+}
+
+form {
+    width: 50vw;
+    padding: 40px 4% 20px 4%;
+    margin: auto;
+    margin-bottom: 140px;
+    text-align: center;
+    background-color: #fff2f5;
+    border: 1.5px solid #efb0bc;
+    border-radius: 30px;
+}
+
+form label, form legend {
+    color: #5a5a5a;
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-padrão {
+    margin: 10px auto 20px auto;
+    border: 2px solid #efb0bc;
+    border-radius: 5px;
+    display: block;
+    padding: 10px 15px;
+    width: 50%;
+}
+
+.input-padrão:focus{
+    outline: none!important;
+    border: 2px solid #BD4B4B;
+}
+.enviar:hover {
+    background: #ca6e6e;
+    transform: scale(1.2);
+}
+
+.enviar {
+    width: 53%;
+    padding: 15px 0;
+    background: #efb0bc;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    transition: 0.8s all;
+    cursor: pointer;
+    margin-bottom: 70px;
+}
+
+/**rodapé**/
+footer {
+    background-color: #969ce6;
+    height: 210px;
+    width: 100%;
+    flex-direction: column;
+}
+
+footer h4 {
+    margin: auto;
+    color: white;
+    text-transform: uppercase;
+    padding: 5px;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 20px;
+}
+.box{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    align-items: center;
+}
+
+footer img {
+    display: inline-block;
+    margin: 30px 5px 10px 5px;
+    width: 2.9vw;
+    max-width: 2.9vw;
+    border: 2.5px solid white;
+    border-radius: 50px;
+}
+
+.icones{
+    margin: 0px 15vw;
+}
+
+.icone-linkedin-ale:hover, .icone-linkedin-duda:hover, .icone-email-ale:hover, .icone-email-duda:hover, .icone-telefone-ale:hover, .icone-telefone-duda:hover{
+    border-color: #757ab6;
+}
+
+.copyright {
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+    background-color: #757ab6;
+    text-transform: uppercase;
+    padding: 30px;
+    font-weight: bold;
 }
